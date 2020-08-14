@@ -1,4 +1,4 @@
-# Install script for directory: /Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui
+# Install script for directory: /Users/johnschulz/Desktop/Toon Shader/ext/nanogui
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/cmake_install.cmake")
+  include("/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/cmake_install.cmake")
 
 endif()
 

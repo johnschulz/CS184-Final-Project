@@ -1,4 +1,4 @@
-# Install script for directory: /Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/src
+# Install script for directory: /Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

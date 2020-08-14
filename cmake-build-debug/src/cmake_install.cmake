@@ -1,4 +1,4 @@
-# Install script for directory: /Users/johnschulz/Desktop/cs184-FinalProject/src
+# Install script for directory: /Users/johnschulz/Desktop/Toon Shader/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,21 +34,21 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/Users/johnschulz/Desktop/cs184-FinalProject/clothsim")
+   "/Users/johnschulz/Desktop/Toon Shader/clothsim")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/Users/johnschulz/Desktop/cs184-FinalProject" TYPE EXECUTABLE FILES "/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/clothsim")
-  if(EXISTS "$ENV{DESTDIR}/Users/johnschulz/Desktop/cs184-FinalProject/clothsim" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/johnschulz/Desktop/cs184-FinalProject/clothsim")
+file(INSTALL DESTINATION "/Users/johnschulz/Desktop/Toon Shader" TYPE EXECUTABLE FILES "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/clothsim")
+  if(EXISTS "$ENV{DESTDIR}/Users/johnschulz/Desktop/Toon Shader/clothsim" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/Users/johnschulz/Desktop/Toon Shader/clothsim")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui"
-      "$ENV{DESTDIR}/Users/johnschulz/Desktop/cs184-FinalProject/clothsim")
+      -delete_rpath "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui"
+      "$ENV{DESTDIR}/Users/johnschulz/Desktop/Toon Shader/clothsim")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}/Users/johnschulz/Desktop/cs184-FinalProject/clothsim")
+      execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}/Users/johnschulz/Desktop/Toon Shader/clothsim")
     endif()
   endif()
 endif()

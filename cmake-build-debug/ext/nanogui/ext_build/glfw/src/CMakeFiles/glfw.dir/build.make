@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/johnschulz/Desktop/cs184-FinalProject
+CMAKE_SOURCE_DIR = "/Users/johnschulz/Desktop/Toon Shader"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend.make
@@ -82,19 +82,19 @@ glfw_OBJECTS =
 
 # External object files for target glfw
 glfw_EXTERNAL_OBJECTS = \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
 
 ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o
 ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o
@@ -111,8 +111,8 @@ ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMa
 ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o
 ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build.make
 ext/nanogui/ext_build/glfw/src/libglfw.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.dylib"
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Linking C shared library libglfw.dylib"
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/glfw.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build: ext/nanogui/ext_build/glfw/src/libglfw.dylib
@@ -120,10 +120,10 @@ ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build: ext/nanogui/ext_build/
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/build
 
 ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean:
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src" && $(CMAKE_COMMAND) -P CMakeFiles/glfw.dir/cmake_clean.cmake
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/clean
 
 ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend:
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/johnschulz/Desktop/cs184-FinalProject /Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/src /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/johnschulz/Desktop/Toon Shader" "/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/src" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw.dir/depend
 

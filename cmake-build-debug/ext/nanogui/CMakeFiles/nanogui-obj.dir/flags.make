@@ -7,11 +7,11 @@ C_FLAGS =  -Wno-deprecated-declarations -g -isysroot /Applications/Xcode.app/Con
 
 C_DEFINES = -DCORO_SJLJ -DGLAD_GLAPI_EXPORT -DGLAD_GLAPI_EXPORT_BUILD -DNANOGUI_BUILD -DNANOGUI_GLAD -DNANOGUI_SHARED -DNVG_BUILD -DNVG_SHARED -D_GLFW_BUILD_DLL
 
-C_INCLUDES = -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glad/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/eigen -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/nanovg/src -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/include -I/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/coro 
+C_INCLUDES = -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glad/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/eigen" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/nanovg/src" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/include" -I"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/coro" 
 
 CXX_FLAGS =  -std=c++11 -m64 -g -Wall -Wextra -std=c++14 -stdlib=libc++ -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -fPIC   -fobjc-arc
 
 CXX_DEFINES = -DCORO_SJLJ -DGLAD_GLAPI_EXPORT -DGLAD_GLAPI_EXPORT_BUILD -DNANOGUI_BUILD -DNANOGUI_GLAD -DNANOGUI_SHARED -DNVG_BUILD -DNVG_SHARED -D_GLFW_BUILD_DLL
 
-CXX_INCLUDES = -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glad/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/eigen -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/nanovg/src -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/include -I/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/coro 
+CXX_INCLUDES = -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glad/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/eigen" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/nanovg/src" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/include" -I"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/coro" 
 

@@ -10,6 +10,12 @@
 misc.h
 ../CGL/include/CGL/misc.h
 
+../CGL/include/CGL/color.h
+CGL.h
+../CGL/include/CGL/CGL.h
+string
+-
+
 ../CGL/include/CGL/matrix3x3.h
 CGL.h
 ../CGL/include/CGL/CGL.h
@@ -1300,7 +1306,7 @@ vector
 nanogui/widget.h
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
+/Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
 iostream
 -
 vector
@@ -1312,17 +1318,47 @@ fstream
 math.h
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
+/Users/johnschulz/Desktop/Toon Shader/src/camera.cpp
+camera.h
+/Users/johnschulz/Desktop/Toon Shader/src/camera.h
+fstream
+-
+iostream
+-
+sstream
+-
+CGL/misc.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/misc.h
+CGL/vector3D.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/vector3D.h
+
+/Users/johnschulz/Desktop/Toon Shader/src/camera.h
 iostream
 -
 CGL/matrix3x3.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/matrix3x3.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/matrix3x3.h
 misc/camera_info.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
 math.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/math.h
+/Users/johnschulz/Desktop/Toon Shader/src/math.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.cpp
+iostream
+-
+math.h
+-
+random
+-
+vector
+-
+cloth.h
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.h
+collision/plane.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
+collision/sphere.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.h
 unordered_set
 -
 unordered_map
@@ -1330,25 +1366,31 @@ unordered_map
 vector
 -
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/CGL.h
 CGL/misc.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/misc.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/misc.h
 clothMesh.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 collision/collisionObject.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
 spring.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+/Users/johnschulz/Desktop/Toon Shader/src/spring.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.cpp
+clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+iostream
+-
+
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 vector
 -
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/CGL.h
 pointMass.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
+/Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.cpp
+/Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.cpp
 cmath
 -
 glad/glad.h
@@ -1358,73 +1400,83 @@ CGL/vector3D.h
 nanogui/nanogui.h
 -
 clothSimulator.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
 camera.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
+/Users/johnschulz/Desktop/Toon Shader/src/camera.h
 cloth.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.h
 collision/plane.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
 collision/sphere.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
 misc/camera_info.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
 misc/file_utils.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
 misc/stb_image.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/stb_image.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/stb_image.h
 OBJ-Loader.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
+/Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
 nanogui/nanogui.h
 -
 memory
 -
 camera.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
+/Users/johnschulz/Desktop/Toon Shader/src/camera.h
 cloth.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.h
 collision/collisionObject.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
 OBJ-Loader.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
+/Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
 nanogui/nanogui.h
 -
 ../clothMesh.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.cpp
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.cpp
 iostream
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/iostream
+/Users/johnschulz/Desktop/Toon Shader/src/collision/iostream
 nanogui/nanogui.h
 -
 ../clothMesh.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 ../clothSimulator.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
 plane.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
 nanogui/nanogui.h
 -
 ../clothMesh.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 collisionObject.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.cpp
+nanogui/nanogui.h
+-
 ../clothMesh.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
 ../misc/sphere_drawing.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
-collisionObject.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+sphere.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/json.hpp
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+../clothMesh.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+../misc/sphere_drawing.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+collisionObject.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+
+/Users/johnschulz/Desktop/Toon Shader/src/json.hpp
 algorithm
 -
 array
@@ -1480,7 +1532,7 @@ utility
 vector
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/main.cpp
+/Users/johnschulz/Desktop/Toon Shader/src/main.cpp
 iostream
 -
 fstream
@@ -1492,7 +1544,7 @@ stdio.h
 stdlib.h
 -
 misc/getopt.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/getopt.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/getopt.h
 getopt.h
 -
 unistd.h
@@ -1502,55 +1554,99 @@ unordered_set
 stdlib.h
 -
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/CGL.h
 collision/plane.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
 collision/sphere.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
+/Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
 cloth.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
+/Users/johnschulz/Desktop/Toon Shader/src/cloth.h
 clothSimulator.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
+/Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
 json.hpp
-/Users/johnschulz/Desktop/cs184-FinalProject/src/json.hpp
+/Users/johnschulz/Desktop/Toon Shader/src/json.hpp
 misc/file_utils.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
 OBJ-Loader.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
+/Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
 collada_info.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
 string
 -
 vector
 -
 CGL/matrix4x4.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/CGL/matrix4x4.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/CGL/matrix4x4.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/dirent.h
+windows.h
+-
+stdio.h
+-
+stdarg.h
+-
+wchar.h
+-
+string.h
+-
+stdlib.h
+-
+malloc.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+errno.h
+-
+
+/Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.cpp
+dirent.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/dirent.h
+dirent.h
+-
+fstream
+-
+file_utils.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
+
+/Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
 set
 -
 string
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/getopt.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/getopt.h
 crtdefs.h
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.cpp
+cmath
+-
+nanogui/nanogui.h
+-
+sphere_drawing.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+CGL/color.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/CGL/color.h
+CGL/vector3D.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/CGL/vector3D.h
+
+/Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
 vector
 -
 nanogui/nanogui.h
 -
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/CGL/CGL.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/stb_image.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/stb_image.h
 stb_image.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/misc/stb_image.h
+/Users/johnschulz/Desktop/Toon Shader/src/misc/stb_image.h
 stdio.h
 -
 stdlib.h
@@ -1580,19 +1676,19 @@ intrin.h
 arm_neon.h
 -
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
+/Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/CGL.h
 CGL/misc.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/misc.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/misc.h
 CGL/vector3D.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/vector3D.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/vector3D.h
 
-/Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+/Users/johnschulz/Desktop/Toon Shader/src/spring.h
 vector
 -
 CGL/CGL.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/CGL/CGL.h
+/Users/johnschulz/Desktop/Toon Shader/src/CGL/CGL.h
 pointMass.h
-/Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
+/Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
 

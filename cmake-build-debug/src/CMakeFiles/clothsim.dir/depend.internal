@@ -8,10 +8,10 @@ src/CMakeFiles/clothsim.dir/camera.cpp.o
  ../CGL/include/CGL/misc.h
  ../CGL/include/CGL/vector3D.h
  ../CGL/include/CGL/vector4D.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/camera.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/camera.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/camera.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
 src/CMakeFiles/clothsim.dir/cloth.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/misc.h
@@ -244,22 +244,22 @@ src/CMakeFiles/clothsim.dir/cloth.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+ /Users/johnschulz/Desktop/Toon Shader/src/cloth.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/cloth.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/spring.h
 src/CMakeFiles/clothsim.dir/clothMesh.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/misc.h
  ../CGL/include/CGL/vector3D.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
 src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/matrix3x3.h
@@ -495,22 +495,22 @@ src/CMakeFiles/clothsim.dir/clothSimulator.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/stb_image.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+ /Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
+ /Users/johnschulz/Desktop/Toon Shader/src/camera.h
+ /Users/johnschulz/Desktop/Toon Shader/src/cloth.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/stb_image.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/spring.h
 src/CMakeFiles/clothsim.dir/collision/plane.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/matrix3x3.h
@@ -746,18 +746,18 @@ src/CMakeFiles/clothsim.dir/collision/plane.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+ /Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
+ /Users/johnschulz/Desktop/Toon Shader/src/camera.h
+ /Users/johnschulz/Desktop/Toon Shader/src/cloth.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/plane.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/spring.h
 src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/misc.h
@@ -990,12 +990,12 @@ src/CMakeFiles/clothsim.dir/collision/sphere.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
 src/CMakeFiles/clothsim.dir/main.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/matrix3x3.h
@@ -1231,27 +1231,27 @@ src/CMakeFiles/clothsim.dir/main.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/OBJ-Loader.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/camera.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/cloth.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothMesh.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/clothSimulator.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/collisionObject.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/plane.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/collision/sphere.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/json.hpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/main.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/camera_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/collada_info.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/getopt.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/pointMass.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/spring.h
+ /Users/johnschulz/Desktop/Toon Shader/src/OBJ-Loader.h
+ /Users/johnschulz/Desktop/Toon Shader/src/camera.h
+ /Users/johnschulz/Desktop/Toon Shader/src/cloth.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothMesh.h
+ /Users/johnschulz/Desktop/Toon Shader/src/clothSimulator.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/collisionObject.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/plane.h
+ /Users/johnschulz/Desktop/Toon Shader/src/collision/sphere.h
+ /Users/johnschulz/Desktop/Toon Shader/src/json.hpp
+ /Users/johnschulz/Desktop/Toon Shader/src/main.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/camera_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/collada_info.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/getopt.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h
+ /Users/johnschulz/Desktop/Toon Shader/src/pointMass.h
+ /Users/johnschulz/Desktop/Toon Shader/src/spring.h
 src/CMakeFiles/clothsim.dir/misc/file_utils.cpp.o
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/dirent.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/file_utils.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/dirent.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/file_utils.h
 src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o
  ../CGL/include/CGL/CGL.h
  ../CGL/include/CGL/color.h
@@ -1485,5 +1485,5 @@ src/CMakeFiles/clothsim.dir/misc/sphere_drawing.cpp.o
  ../ext/nanogui/include/nanogui/vscrollpanel.h
  ../ext/nanogui/include/nanogui/widget.h
  ../ext/nanogui/include/nanogui/window.h
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.cpp
- /Users/johnschulz/Desktop/cs184-FinalProject/src/misc/sphere_drawing.h
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.cpp
+ /Users/johnschulz/Desktop/Toon Shader/src/misc/sphere_drawing.h

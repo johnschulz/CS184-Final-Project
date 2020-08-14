@@ -37,7 +37,7 @@
 <h2 align="left">Problem Description</h2>
 <p align="left">For this final project, I combined aspects from all of the previous projects to create unique visualizations that reflect toon-like shading on complex 3D objects we have previously worked with. I wanted to make my project accessible for people with differing graphic expertise by implementing new adjustable GUI parameters to dynamically edit the graphics to fit the user’s desire. My final deliverables show how easily someone can modify my shader and the resultant graphic by simply inputting new values and changing slider values. My implementation reflects a high-quality toon shader with specular highlights, diffuse illumination, and outlines that all together create visually pleasing graphics for abstract and complex objects. </p>
 
-<h2 align="left">Toon Shader</h2>
+<h2 align="left">Part 1: Toon Shader</h2>
 <p align="left"> The toon shader I implemented consists of three parts that together create toon-like graphics. More specifically, my shader consists of specular highlights, diffuse illumination, and object outlines. These three shading techniques use Blinn Phong Shaing principles to systematically shade edges and surfaces in regard to the light and camera positions. Together, all aspects of my shader support each other and result in visually pleasing graphics regardless of the designated object.</p>
 <h3 align="left">1. Specular Highlights</h1>
 <p align="left"> To start, I added specular highlights with relation to the chosen color on the color wheel. Essentially, I added the color white multiplied by the designated specular intensity to the chosen color if the interested location on the object was being intersected by the light in relation to the camera position. I checked this condition by calculating the half vector between the camera and the target position, normalizing this vector, completing the dot product with the vertex normal and checking if this value fell between the designated cut off point. Below are the initial results of applying specular shading only to a sphere: </p>
@@ -47,88 +47,173 @@
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/1.png" align="middle" width="400px"/>
+        <img src="images/spec.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
       <td>
-        <img src="images/2.png" align="middle" width="400px"/>
+        <img src="images/spec1.png" align="middle" width="400px"/>
         <figcaption align="middle"></figcaption>
       </td>
     </tr>
   </table>
 </div>
 
-<p>Wireframe with (1) without any shearing constraints, (2) with only shearing constraints, and (3) with all constraints.</p>
+<h3 align="left">2. Outlines</h1>
+<p align="left"> After adding specular highlights to my shader, I introduced outlines to make a more profound shading that highlights the edges of the object. My implementation of outline detection included interpolating the desired thickness of the edge in relation to the camera direction and the vertex normal. If the dot product between the vertex normal and the camera direction fell within the designated threshold, I modified the outcolor to become black (in later parts of my implementation I allow for the user to select the outline color). Here are images of a sphere with only outlines applied: </p>
 
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/noShearing.png" align="middle" width="400px"/>
-        <figcaption align="middle">(1) No Shearing</figcaption>
+        <img src="images/outline.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
       <td>
-        <img src="images/onlyShearing.png" align="middle" width="400px"/>
-        <figcaption align="middle">(2) Only Shearing</figcaption>
-      </td>
-
-    </tr>
-    <tr>
-      <td>
-        <img src="images/allConstraints.png" align="middle" width="400px"/>
-        <figcaption align="middle">(3) All Constraints</figcaption>
+        <img src="images/outline1.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
     </tr>
   </table>
 </div>
 
-<h2 align="middle">Part 2: Simulation via Numerical Integration</h2>
-<p>Implementation: For this part of the project, I extrapolated from the wireframe structure I set up in part to create simulations based on how cloth interacts with gravity. To start, I iterated through each and every point mass to calculate the total force acting on each point using Hooke’s law. For each spring, the structural constraints were checked to see how much to adjust each point connecting on the end of a spring. After these initial forces were calculated, I used Verlet Integration to see how each point mass’s position changed during this time step. For each point mass, I calculated their next position with energy loss (damping) considered if the point was not pinned. Ultimately, after generating new positions I ensured that each spring would not expand 10% greater than its rest length. If an edited spring’s length did expand past this threshold, I updated half of the correction to each point when both points weren’t pinned and the whole threshold to points that shared a spring with a pinned point mass. This initial implementation would be further expanded in future parts.</p>
+<h3 align="left">3. Diffuse lighting</h1>
+<p align="left"> Lastly, to add more dynamic and adaptable toon like graphics I introduced diffuse lighting to my shading implementation. Diffuse lighting allows for objects to blend their primary color with the outline color in a visually appealing way that considers light positions and the objects geometry. To implement diffuse lighting, I first found the reflection coefficient of the target location by taking the dot product of the light position and the vertex normal to check if the location satisfies a specific diffuse levels conditions. For each diffuse level which I evenly partitioned, I check if the specific location's reflection coefficient fell within the diffuse areas minimum and maximum value. If the specific location did satisfy the conditions, the difference between the primary color and the outline colored was multiplied by the specific diffuse level number and added to the outline color to reflect a transitional color. The final result of this portion are reflected in the sphere below: </p>
 
-<h4>Manipulating Parameters</h2>
-<p>ks: Changing the spring constant, ks, changes how the stiff or elastic the spring is. Lower ks values lead to the cloth to sag and stretch more while higher ks values make the springs more stiff and lead to a stiffer cloth.</p>
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/lowK.png" align="middle" width="400px"/>
-        <figcaption align="middle">Small Spring Constant</figcaption>
+        <img src="images/diffuse.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
       <td>
-        <img src="images/highK.png" align="middle" width="400px"/>
-        <figcaption align="middle">High Spring Constant</figcaption>
+        <img src="images/diffuse1.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
     </tr>
   </table>
 </div>
 
-<p>Density: Changing the density behaves in a similar way to changing the spring constant value. High density leads to the cloth sagging more while a low density makes the cloth appear more stiff and less affected by gravity.</p>
+<h3 align="left">All Together</h1>
+<p align="left"> When put together, these three toon shading techniques create visually pleasing graphics that reflect the objects geometry and the lighting it receives. Below are images of the sphere and the sphere with a cloth over it with my final toon shader implementation applied: </p>
+
+
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/lowD.png" align="middle" width="400px"/>
-        <figcaption align="middle">Small Density</figcaption>
+        <img src="images/allTogether.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
       <td>
-        <img src="images/highD.png" align="middle" width="400px"/>
-        <figcaption align="middle">High Density</figcaption>
+        <img src="images/allTogether1.png" align="middle" width="400px"/>
+        <figcaption align="middle"></figcaption>
       </td>
     </tr>
   </table>
 </div>
 
-<p>Damping: Damping changes how the springs and ultimately the cloth react to a changing state. In the images below you can see how a high damping value leads to the cloth falling slower and a more uniform fashion. Comparitively, with a low damping value, the cloth falls very quickly and seems to bounce more freely after this initial fall.</p>
+<h2 align="left">Part 2: Introducing Complex Objects</h2>
+<p align="left"> To best show of my shader, I had to expand the objects I could display beyond simple json files such as the sphere, plane and cloth we used in project 4. After hours of research, I determined that I could represent 3D objects such as the bunny, cow and dragon we used in previous projects by using .obj files to create meshes for shading. To simplify, my conversion from .obj file to a framework suitable for the structure used to represent json files, I utilized MIT's Obj loader class that helped create easily accessible object instances from a provided .obj file. Once my designated .obj file was converted to a object class instance I modified code within the cloth simulator to update vetices, normals, and uv coordinates for all of the triangles within the object. Ultimately, updating these values prepared these objects to become shaded with the shaders I implemeted in project 4 and more importantly the toon shader I described above. For your reference to designate a object file use the -w followed by the path to the file to complex 3d objects. Below are some results of my shader appied to abstract objects objects: </p>
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/lowDa.png" align="middle" width="400px"/>
-        <figcaption align="middle">Small Damping</figcaption>
+        <img src="images/dragon.png" align="middle" width="400px"/>
       </td>
       <td>
-        <img src="images/highDa.png" align="middle" width="400px"/>
-        <figcaption align="middle">High Damping</figcaption>
+        <img src="images/cow.png" align="middle" width="250px"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<img src="images/bridge.png" align="middle" width="650px"/>
+
+
+<h2 align="left">Part 3: Updating GUI</h2>
+<p align="left">After implementing a fully functioning implementation for toon shading all types of objects, I wanted to provide my users with tools to modify specific parameters for my toon shader. For each of the many parameters I introduced in my toon shader, I inserted a new GUI aspect so the user could dynamically change the shading to meet their desired result. To make space for these new GUI components, I removed all of the simulation components we used in project 4. With this open space, I inserted new modifiable sliders, color wheels, and number inputs all related to the toon shading implementation I described above. Below is an image of the GUI interface I included alongside the original appearance interface: </p>
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/original.png" align="middle" width="400px"/>
+      </td>
+      <td>
+        <img src="images/added.png" align="middle" width="340px"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="left">Component Toggler</h1>
+<p align="left">The first new GUI aspect I introduced was a component toggler for all three of the toon shading techniques I implemented. These togglers allow for users to easily select which aspect of my toon shading implementation they want to use. I implemented this by adding if statements to each part of my toon shader, each checking if the respective portion was toggled. Below are images of the same object with individual portions toggled: </p>
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/spec3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Only Specular Highlights</figcaption>
+      </td>
+      <td>
+        <img src="images/out3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Only Outline</figcaption>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/diff3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Only Diffuse Lighting</figcaption>
+      </td>
+      <td>
+        <img src="images/all.png" align="middle" width="400px"/>
+        <figcaption align="middle">Full Implementation</figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="left">Outline Color Wheel</h1>
+<p align="left"> I introduced a second color wheel to further adjust the color of my toon shader. Chaning the color wheel value changes the outline color and the transitional colors for diffuse lighting. </p>
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/color1.png" align="middle" width="500px"/>
+        <figcaption align="middle"></figcaption>
+      </td>
+      <td>
+        <img src="images/color2.png" align="middle" width="500px"/>
+        <figcaption align="middle"></figcaption>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h3 align="left">Slider Color Adapters</h1>
+
+
+
+  <div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="images/fin3.png" align="middle" width="400px"/>
+        <figcaption align="middle">Baseline</figcaption>
+      </td>
+      <td>
+        <img src="images/changeBright.png" align="middle" width="413px"/>
+        <figcaption align="middle">Shade Brightness</figcaption>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/changeSize.png" align="middle" width="405px"/>
+        <figcaption align="middle">Shading Size</figcaption>
+      </td>
+      <td>
+        <img src="images/changeOut.png" align="middle" width="380px"/>
+        <figcaption align="middle">Outline Size</figcaption>
       </td>
     </tr>
   </table>

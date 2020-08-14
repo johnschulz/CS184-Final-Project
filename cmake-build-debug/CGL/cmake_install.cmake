@@ -1,8 +1,8 @@
-# Install script for directory: /Users/johnschulz/Desktop/cs184-FinalProject/CGL
+# Install script for directory: /Users/johnschulz/Desktop/Toon Shader/CGL
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/johnschulz/Desktop/cs184-FinalProject/CGL")
+  set(CMAKE_INSTALL_PREFIX "/Users/johnschulz/Desktop/Toon Shader/CGL")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/CGL/src/cmake_install.cmake")
+  include("/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/CGL/src/cmake_install.cmake")
 
 endif()
 

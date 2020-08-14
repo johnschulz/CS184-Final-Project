@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11 -m64 -g -g -isysroot /Applications/Xcode.app/Contents/De
 
 CXX_DEFINES = -DGLAD_GLAPI_EXPORT -DNANOGUI_GLAD -DNANOGUI_SHARED -DNVG_SHARED
 
-CXX_INCLUDES = -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/include -I/Users/johnschulz/Desktop/cs184-FinalProject/CGL/include -I/usr/local/include/freetype2 -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glad/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/nanovg/src -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/eigen -I/Users/johnschulz/Desktop/cs184-FinalProject/CGL/include/CGL 
+CXX_INCLUDES = -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/include" -I"/Users/johnschulz/Desktop/Toon Shader/CGL/include" -I/usr/local/include/freetype2 -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glad/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/nanovg/src" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/eigen" -I"/Users/johnschulz/Desktop/Toon Shader/CGL/include/CGL" 
 

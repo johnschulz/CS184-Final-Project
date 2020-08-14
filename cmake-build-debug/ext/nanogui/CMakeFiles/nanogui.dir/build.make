@@ -63,10 +63,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/johnschulz/Desktop/cs184-FinalProject
+CMAKE_SOURCE_DIR = "/Users/johnschulz/Desktop/Toon Shader"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include ext/nanogui/CMakeFiles/nanogui.dir/depend.make
@@ -82,51 +82,51 @@ nanogui_OBJECTS =
 
 # External object files for target nanogui
 nanogui_EXTERNAL_OBJECTS = \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
-"/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/darwin.mm.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/nanogui_resources.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glutil.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/common.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/widget.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/theme.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/layout.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/screen.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/label.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/window.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popup.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/checkbox.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/button.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/popupbutton.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/combobox.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/progressbar.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/slider.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/messagedialog.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/textbox.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imagepanel.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/imageview.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/vscrollpanel.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorwheel.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/colorpicker.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/graph.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/stackedwidget.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabheader.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/tabwidget.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/glcanvas.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui-obj.dir/src/serializer.cpp.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/context.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/init.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/input.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/monitor.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/vulkan.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/window.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_init.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_joystick.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_monitor.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_window.m.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/cocoa_time.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/posix_tls.c.o" \
+"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o"
 
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/nanovg/src/nanovg.c.o
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui-obj.dir/ext/glad/src/glad.c.o
@@ -175,8 +175,8 @@ ext/nanogui/libnanogui.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_obj
 ext/nanogui/libnanogui.dylib: ext/nanogui/ext_build/glfw/src/CMakeFiles/glfw_objects.dir/nsgl_context.m.o
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui.dir/build.make
 ext/nanogui/libnanogui.dylib: ext/nanogui/CMakeFiles/nanogui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Linking CXX shared library libnanogui.dylib"
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/nanogui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ext/nanogui/CMakeFiles/nanogui.dir/build: ext/nanogui/libnanogui.dylib
@@ -184,10 +184,10 @@ ext/nanogui/CMakeFiles/nanogui.dir/build: ext/nanogui/libnanogui.dylib
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/build
 
 ext/nanogui/CMakeFiles/nanogui.dir/clean:
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui" && $(CMAKE_COMMAND) -P CMakeFiles/nanogui.dir/cmake_clean.cmake
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/clean
 
 ext/nanogui/CMakeFiles/nanogui.dir/depend:
-	cd /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/johnschulz/Desktop/cs184-FinalProject /Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/johnschulz/Desktop/Toon Shader" "/Users/johnschulz/Desktop/Toon Shader/ext/nanogui" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui" "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/CMakeFiles/nanogui.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : ext/nanogui/CMakeFiles/nanogui.dir/depend
 

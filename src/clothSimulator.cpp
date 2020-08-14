@@ -687,7 +687,7 @@ void ClothSimulator::initGUI(Screen *screen) {
 
   // Spring types
 
-  new Label(window, "Spring types", "sans-bold");
+  new Label(window, "Components ", "sans-bold");
 
   {
     Button *b = new Button(window, "Toggle Specular Highlights");

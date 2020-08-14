@@ -6,5 +6,5 @@ C_FLAGS =  -Wno-deprecated-declarations -g -isysroot /Applications/Xcode.app/Con
 
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/include -I/Users/johnschulz/Desktop/cs184-FinalProject/ext/nanogui/ext/glfw/src -I/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/ext_build/glfw/src 
+C_INCLUDES = -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/include" -I"/Users/johnschulz/Desktop/Toon Shader/ext/nanogui/ext/glfw/src" -I"/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/ext_build/glfw/src" 
 

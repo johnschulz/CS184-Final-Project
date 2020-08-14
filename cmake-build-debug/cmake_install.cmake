@@ -1,8 +1,8 @@
-# Install script for directory: /Users/johnschulz/Desktop/cs184-FinalProject
+# Install script for directory: /Users/johnschulz/Desktop/Toon Shader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/Users/johnschulz/Desktop/cs184-FinalProject/")
+  set(CMAKE_INSTALL_PREFIX "/Users/johnschulz/Desktop/Toon Shader/")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,9 +34,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/ext/nanogui/cmake_install.cmake")
-  include("/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/CGL/cmake_install.cmake")
-  include("/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/src/cmake_install.cmake")
+  include("/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/ext/nanogui/cmake_install.cmake")
+  include("/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/CGL/cmake_install.cmake")
+  include("/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/src/cmake_install.cmake")
 
 endif()
 
@@ -48,5 +48,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/johnschulz/Desktop/Toon Shader/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

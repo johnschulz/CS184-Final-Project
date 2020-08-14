@@ -114,7 +114,7 @@
 </div>
 
 <h2 align="left">Part 2: Introducing Complex Objects</h2>
-<p align="left"> To best show of my shader, I had to expand the objects I could display beyond simple json files such as the sphere, plane and cloth we used in project 4. After hours of research, I determined that I could represent 3D objects such as the bunny, cow and dragon we used in previous projects by using .obj files to create meshes for shading. To simplify, my conversion from .obj file to a framework suitable for the structure used to represent json files, I utilized MIT's Obj loader class that helped create easily accessible object instances from a provided .obj file. Once my designated .obj file was converted to a object class instance I modified code within the cloth simulator to update vetices, normals, and uv coordinates for all of the triangles within the object. Ultimately, updating these values prepared these objects to become shaded with the shaders I implemeted in project 4 and more importantly the toon shader I described above. For your reference to designate a object file use the -w followed by the path to the file to complex 3d objects. Below are some results of my shader appied to abstract objects objects: </p>
+<p align="left"> To best show of my shader, I had to expand the objects I could display beyond simple json files such as the sphere, plane and cloth we used in project 4. After hours of research, I determined that I could represent 3D objects such as the bunny, cow and dragon we used in previous projects by using .obj files to create meshes for shading. To simplify, my conversion from .obj file to a framework suitable for the structure used to represent json files, I utilized MIT's Obj loader class that helped create easily accessible object instances from a provided .obj file. Once my designated .obj file was converted to a object class instance I modified code within the cloth simulator to update vetices, normals, and uv coordinates for all of the triangles within the object. Ultimately, updating these values prepared these objects to become shaded with the shaders I implemeted in project 4 and more importantly the toon shader I described above. For your reference, to designate a object file use the -w followed by the path to the file to complex 3d objects. Additionally, I used a dae to obj file converter (linked below) so I could utilize objects I was familiar with. Below are some results of my shader appied to abstract objects objects: </p>
 <div align="middle">
   <table style="width=100%">
     <tr>
@@ -218,164 +218,59 @@
     </tr>
   </table>
 </div>
-<p> Below is an image of my cloth at its final resting state with Normal shading to show the tension on the wireframe. My colors came out different than the specs but it appears to have the same relative behavior for each section of the cloth.</p>
+
+
+
+<h3 align="left">Lighting Position</h1>
+  <div align="middle">
+    <table style="width=100%">
+      <tr>
+        <td>
+          <img src="images/ang1.png" align="middle" width="500px"/>
+          <figcaption align="middle"></figcaption>
+        </td>
+        <td>
+          <img src="images/ang2.png" align="middle" width="490px"/>
+          <figcaption align="middle"></figcaption>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+<h3 align="left">Diffuse Levels</h1>
 <div align="middle">
   <table style="width=100%">
     <tr>
       <td>
-        <img src="images/p2.png" align="middle" width="400px"/>
-        <figcaption align="middle">Final Resting State</figcaption>
+        <img src="images/1.png" align="middle" width="400px"/>
+        <figcaption align="middle">One Diffuse Level</figcaption>
+      </td>
+      <td>
+        <img src="images/2.png" align="middle" width="413px"/>
+        <figcaption align="middle">Two Diffuse Levels</figcaption>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="images/3.png" align="middle" width="405px"/>
+        <figcaption align="middle">Three Diffuse Levels</figcaption>
+      </td>
+      <td>
+        <img src="images/4.png" align="middle" width="380px"/>
+        <figcaption align="middle">Nearly 50 Diffuse Levels</figcaption>
       </td>
     </tr>
   </table>
 </div>
+  
 
 
-<h2 align="middle">Part 3: Handling Collisions with Other Objects</h2>
-<p>Implementation: After implementing how point mass’s and the cloth, in general, changed when forces were applied to it, I started to consider how a cloth interacted with other surfaces such as spheres and planes. First, I handled collisions with spheres by using the relationship between the cloth’s trajectory and the tangent point where the cloth would meet the sphere. If the point mass’s next positions intersected or fell within the sphere, I updated its position by adding a scaled difference between the tangent point and the point mass’s last position. Following the handling of collisions with spheres, I implemented how points reacted to collisions with planes. If the point mass’s crossed through the plane (current position and last position on opposite sides), I found its tangent point by using the planes normal vector, calculated the correction vector (the difference between the tangent point and the last position), and updated the point mass’s position with this correction vector scaled and a surface offset to ensure the cloth layed above the plane. Lastly, I extended my previous simulation implementation to handle collisions by iterating through each point mass and running these unique collide methods on them for all the collisions that exist.</p>
-
-<p>Below are images of a shaded cloth resting on a sphere with differing spring constat or ks values. As expected these images follow similar behaviors to the previus section where I displayed stiffer cloths with higher ks values and a more saggy cloth when ks values were smaller. When ks equals 50000 the cloth looks stiffer and fans out wider than when ks equals 500 and the cloth sags downward much more drastically. As I stated above, this occurs because the spring constant determines the springs elasticity and stiffness.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/5000.png" align="middle" width="400px"/>
-        <figcaption align="middle">ks = 5000</figcaption>
-      </td>
-      <td>
-        <img src="images/50000.png" align="middle" width="400px"/>
-        <figcaption align="middle">ks = 50000</figcaption>
-      </td>
-
-    </tr>
-    <tr>
-      <td>
-        <img src="images/500.png" align="middle" width="400px"/>
-        <figcaption align="middle">ks = 500</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<p>Shaded cloth lying peacefully at rest on a plane.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/plane.png" align="middle" width="400px"/>
-        <figcaption align="middle">Cloth Flat on a Plane</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
+<h2 align="left">Conclusion</h2>
 
 
-<h2 align="middle">Part 4: Handling self-collisions</h2>
-<p>Implementation: In the previous part, I implemented how a cloth interacted with other objects, but I did not account for how the cloth collides with itself. To do this in a timely fashion, I implemented spatial hashing by constructing a hash table that maps unique floats to a vector of point mass’s. Before constructing my hash table, I created a hash function to truncate each point to the closest coordinate within a 3D box by using floor division and scalars. After defining my hash function, I iterated through each point mass and initialized a new point mass vector if the spatial map did not already account for the point. Ultimately, I used this spatial map for checking collisions between every point and their respective potential candidates. If the difference between the point mass and the candidate position was less than the threshold of two times the thickness and they aren’t the same point mass object, I updated the point mass’s position by adding the average of all the correction vectors that were calculated using the difference of the current position and candidate’s positions. The final result of this implementation is a cloth that folds on itself in a natural way that follows the rules of physics in the natural world.</p>
-<p> A cloth collapsing on itself as captured with images that show it at an early state, mid state, and nearly resting state.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/early.png" align="middle" width="400px"/>
-        <figcaption align="middle">Early State</figcaption>
-      </td>
-      <td>
-        <img src="images/mid.png" align="middle" width="400px"/>
-        <figcaption align="middle">Middle State</figcaption>
-      </td>
 
-    </tr>
-    <tr>
-      <td>
-        <img src="images/rest.png" align="middle" width="400px"/>
-        <figcaption align="middle">Nearly Resting State</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
-
-
-<p> Below are four images that show how changing the density changes the behavior of self collisions on a cloth falling on a plane. In the top two images there is a lower density and we see the cloth fold more smootly and with less bends. Comparitively, for the two bottom images with a much higher density the cloth folds in on itself more often and there are resultantly more ruffles as the cloth collapses.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/lowDearly.png" align="middle" width="400px"/>
-        <figcaption align="middle">Low Density Early State</figcaption>
-      </td>
-      <td>
-        <img src="images/lowDlate.png" align="middle" width="400px"/>
-        <figcaption align="middle">Low Density Late State</figcaption>
-      </td>
-
-    </tr>
-    <tr>
-      <td>
-        <img src="images/highDearly.png" align="middle" width="400px"/>
-        <figcaption align="middle">High Density Early State</figcaption>
-      </td>
-      <td>
-        <img src="images/highDlate.png" align="middle" width="400px"/>
-        <figcaption align="middle">High Density Late State</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<h2 align="middle">Part 5: Shaders</h2>
-<p>Shader Programs (implementation): This portion of the project consisted of implementing a series of shader programs to add textures, colors, and lighting to the cloth graphics we previously generated. To do this, I used GLSL, a language similar to C, to add color and shader attributes to graphic positions within the scene. For each task in this part, I implemented fragment shaders to write colors onto positions by using the vertex values that were rasterized using a vertex shader file. Together these vertex shaders and fragment shaders allowed me to portray lighting and material effects such as diffuse shading, Phong shading, mirror shading, and texture mapping. </p>
-
-<p>Blinn-Phong Shading Model: To implement Blinn-Phong shading, I extrapolated from the first task of this part that added diffuse lighting by using the diffuse coefficient, kd, and illumination from the source. For Blinn-Phong shading, I used diffuse lighting in addition to ambient shading and specular shading. Ambient shading added a constant color for all positions that were intersected with. Specular shading is modeled similarly to diffuse lighting but using a different coefficient and highlights generate by a vector off a surface. Together, these three shading types come together to create _hong shading that is depicted below.</p>
-<p> Blinn-Phong shader outputting only the ambient component, only outputting the diffuse component, only outputting the specular component, and finally one using the entire Blinn-Phong model.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/ambient.png" align="middle" width="400px"/>
-        <figcaption align="middle">Only Ambient Component</figcaption>
-      </td>
-      <td>
-        <img src="images/diffuse.png" align="middle" width="400px"/>
-        <figcaption align="middle">Only Diffuse Component</figcaption>
-      </td>
-
-    </tr>
-    <tr>
-      <td>
-        <img src="images/specular.png" align="middle" width="400px"/>
-        <figcaption align="middle">Only Specular Component</figcaption>
-      </td>
-      <td>
-        <img src="images/all.png" align="middle" width="400px"/>
-        <figcaption align="middle">Entire Blinn-Phong Model</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
-
-<p>A texture mapping shader using my own custom texture.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/texture.png" align="middle" width="400px"/>
-        <figcaption align="middle">Texture Mapping</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
-<p>A mirror shader showing the cloth with a reflective behavior.</p>
-<div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="images/mirror.png" align="middle" width="400px"/>
-        <figcaption align="middle">Mirro</figcaption>
-      </td>
-    </tr>
-  </table>
-</div>
+<h3 align="left">Video</h1>
+  
 
 
 </body>

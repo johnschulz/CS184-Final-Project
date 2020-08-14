@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/johnschulz/Desktop/cs184-FinalProject
+-- Using Cocoa for window creation
+-- NanoGUI: using libc++ and libc++abi.
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/johnschulz/Desktop/cs184-FinalProject/cmake-build-debug
